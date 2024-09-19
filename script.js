@@ -1,5 +1,10 @@
 function stringChop(str, size) {
-  // your code here
+ let arr = str.split("")
+	let result = []
+	while(arr.length >0){
+		result.push(arr.splice(0,size).join(""))
+	}
+return result 
 }
 
 // Do not change the code below
